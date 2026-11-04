@@ -1,15 +1,29 @@
-GELATO WEBSITE — UPLOAD GUIDE
+GELATO COCKTAIL — READY-TO-UPLOAD WEBSITE
 
-1. Extract gelato-website.zip.
-2. Upload the complete gelato-website folder contents to your hosting provider's public web folder (often called public_html).
-3. Keep index.html and the assets folder together. Do not rename the asset files or move them out of assets.
-4. Open your domain. The homepage loads from index.html.
+FILES
+index.html
+style.css
+script.js
+assets/nightlife.webp
+assets/friends.webp
 
-This is a static HTML/CSS/JavaScript website. No terminal, build step, database, or framework is required.
+HOW TO PUBLISH
+1. Unzip the package.
+2. Open the gelato-cocktail-site folder.
+3. Upload ALL the files and the assets folder to your web host's public_html (or equivalent) directory.
+4. Ensure index.html is at the root of your public site, with style.css, script.js and assets/ beside it.
+5. Visit your domain. No terminal, npm, compilation, backend, or installation required.
 
-BEFORE PUBLISHING:
-- The three flavour cards are illustrative suggestions. Replace them with Gelato's confirmed flavours.
-- Confirm all product claims and ingredients against the actual recipe and packaging.
-- Add verified nutrition values only after checking the final product formulation/lab analysis.
-- Replace the AI-generated visual crops with approved product photography when available.
-- Customer contact is set to customercare@gelatonig.com only.
+FEATURES
+- Five main sections: Home, About, Experience, Product, Responsible Drinking & Contact.
+- Adult age-confirmation overlay (18+). This is a self-attestation, not identity verification.
+- Responsive design, mobile navigation, smooth scroll, subtle animations.
+- Local nightlife imagery and CSS-drawn unbranded cocktail illustration.
+- No fruit images, fruit health claims, or invented Gelato bottles/cans.
+- Only customer contact: customercare@gelatonig.com.
+
+VERIFY BEFORE PUBLISHING
+- All label transcription, registration number, ingredients, and warnings against the latest physical product label.
+- Any applicable Nigerian alcohol marketing, labelling, age restriction and advertising requirements.
+- The cocktail-glass illustration is a decorative serving concept, not the product's packaging.
+- Fonts are requested from Google Fonts; the site falls back to local system fonts if unavailable.

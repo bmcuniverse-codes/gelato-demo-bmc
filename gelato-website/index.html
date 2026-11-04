@@ -3,290 +3,154 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f5e9">
-  <meta name="description" content="Gelato is a delicious fruit-based beverage made for refreshing moments with friends and family. Healthy drink, healthy family.">
-  <title>Gelato Nigeria | Healthy Drink, Healthy Family</title>
+  <meta name="theme-color" content="#090807">
+  <meta name="description" content="Meet Gelato — a bold, refreshing alcoholic flavoured drink at 5% ABV. Discover the flavours and make every moment count.">
+  <title>Gelato — Bold Flavour. Unforgettable Moments.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green:#174d2b; --green2:#2f713d; --lime:#a9c95b; --orange:#f28a28;
-      --cream:#f8f5e9; --paper:#fffdf7; --ink:#18251b; --muted:#647064;
-      --pink:#e95b69; --line:rgba(23,77,43,.12); --shadow:0 18px 55px rgba(31,67,39,.10);
-      --serif:"Playfair Display", Georgia, serif; --sans:"DM Sans", Arial, sans-serif;
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:90px}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
-    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
-    .wrap{width:min(1160px,calc(100% - 48px));margin:auto}
-    .announcement{background:var(--green);color:#f9f5e7;text-align:center;padding:8px 16px;font-size:12px;letter-spacing:.08em}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,253,247,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;flex-direction:column;line-height:1}
-    .brand-name{font-family:var(--serif);font-weight:800;font-style:italic;font-size:34px;color:var(--green);letter-spacing:-2px}
-    .brand-tag{font-size:9px;color:var(--green);letter-spacing:.03em;margin-top:5px}
-    .nav-links{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:600}
-    .nav-links a{transition:color .2s}.nav-links a:hover{color:var(--orange)}
-    .contact-pill,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;background:var(--green);color:white;padding:13px 20px;font:700 13px var(--sans);transition:transform .2s,background .2s}
-    .contact-pill:hover,.btn:hover{transform:translateY(-2px);background:var(--green2)}
-    .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:12px;padding:9px 12px;color:var(--green);font-size:20px}
-    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 77% 45%,#f8e9c8 0,transparent 38%),linear-gradient(110deg,#fbf8ed 0%,#f7f0dc 100%);padding:72px 0 58px}
-    .hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(242,138,40,.15);border-radius:50%;right:-130px;top:-180px;box-shadow:0 0 0 40px rgba(242,138,40,.035),0 0 0 85px rgba(242,138,40,.025)}
-    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:.88fr 1.12fr;align-items:center;gap:22px}
-    .eyebrow{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
-    h1,h2,h3,p{margin-top:0} h1{font:800 clamp(46px,6vw,76px)/1.04 var(--serif);letter-spacing:-2.6px;color:var(--green);margin:17px 0 20px}
-    h1 em{color:var(--orange);font-style:normal}
-    .hero-copy{max-width:490px;color:#465247;font-size:16px;line-height:1.8}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0 30px}
-    .btn.secondary{background:transparent;color:var(--green);border:1px solid rgba(23,77,43,.25)}
-    .trust-row{display:flex;gap:20px;flex-wrap:wrap;color:var(--green);font-size:11px;font-weight:700}
-    .trust-row span{display:flex;align-items:center;gap:7px}.trust-row b{font-size:19px;color:var(--orange)}
-    .hero-visual{position:relative;min-width:0}
-    .hero-visual img{width:100%;height:440px;object-fit:cover;object-position:center;border-radius:48% 48% 26px 26px;mix-blend-mode:multiply;filter:saturate(1.05)}
-    .round-note{position:absolute;right:0;bottom:18px;background:var(--green);color:#fff;border-radius:50%;width:112px;height:112px;display:grid;place-content:center;text-align:center;font-size:11px;line-height:1.35;box-shadow:var(--shadow);transform:rotate(9deg)}
-    .round-note strong{font:700 21px var(--serif);display:block;color:#f7c85e}
-    .strip{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .strip-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:21px 0}
-    .strip-item{display:flex;gap:12px;align-items:center;padding:4px 20px;border-right:1px solid var(--line)}
-    .strip-item:first-child{padding-left:0}.strip-item:last-child{border:0}
-    .strip-icon{width:38px;height:38px;flex:0 0 38px;border-radius:50%;display:grid;place-items:center;background:#f2f6e8;color:var(--green);font-size:19px}
-    .strip-item strong{display:block;font-size:12px;color:var(--green)}.strip-item small{display:block;color:var(--muted);font-size:10px;line-height:1.4}
-    section{padding:92px 0}
-    .section-head{text-align:center;max-width:690px;margin:0 auto 42px}
-    .section-head h2{font:700 clamp(32px,4vw,48px)/1.15 var(--serif);color:var(--green);margin:10px 0 12px;letter-spacing:-1px}
-    .section-head p{color:var(--muted);margin:0}
-    .about{background:#fbfaf4}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-    .about-photo{position:relative}.about-photo img{height:430px;width:100%;object-fit:cover;border-radius:8px 110px 8px 8px;box-shadow:var(--shadow)}
-    .photo-caption{position:absolute;bottom:-18px;right:-18px;background:#f4d77c;color:var(--green);padding:16px 22px;border-radius:14px;font:700 17px var(--serif);box-shadow:var(--shadow)}
-    .about-copy h2{font:700 clamp(34px,4vw,49px)/1.12 var(--serif);color:var(--green);margin:12px 0 18px}
-    .about-copy p{color:var(--muted)}
-    .check-list{list-style:none;padding:0;margin:25px 0 0;display:grid;gap:12px}
-    .check-list li{display:flex;gap:11px;align-items:flex-start;font-size:14px}
-    .check-list li:before{content:"✓";display:grid;place-items:center;flex:0 0 23px;height:23px;border-radius:50%;background:#eaf1dc;color:var(--green);font-weight:800}
-    .flavours{background:linear-gradient(180deg,#fffdf7,#f7f5e9)}
-    .flavour-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .flavour-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;overflow:hidden;position:relative;min-height:260px;box-shadow:0 8px 30px rgba(30,65,37,.04);transition:transform .25s,box-shadow .25s}
-    .flavour-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
-    .flavour-card:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-45px;top:-45px;background:var(--tint)}
-    .flavour-card .fruit{font-size:34px;position:relative;z-index:1}
-    .flavour-card h3{font:700 23px var(--serif);color:var(--green);margin:16px 0 8px;position:relative;z-index:1}
-    .flavour-card p{font-size:13px;color:var(--muted);max-width:260px;position:relative;z-index:1}
-    .flavour-card small{display:inline-block;margin-top:7px;color:var(--green);font-weight:700;font-size:11px;letter-spacing:.04em}
-    .note{font-size:12px;color:var(--muted);text-align:center;margin:24px auto 0;max-width:740px}
-    .nutrition{background:#eff3e4}
-    .nutrition-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:55px;align-items:center}
-    .nutrition-image img{width:100%;height:430px;object-fit:cover;border-radius:45% 45% 18px 18px;mix-blend-mode:multiply}
-    .nutrition-content h2{font:700 clamp(34px,4vw,48px)/1.12 var(--serif);color:var(--green);margin:10px 0 12px}
-    .nutrition-content>p{color:var(--muted);font-size:14px}
-    .vitamin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:27px}
-    .vitamin{background:rgba(255,255,255,.78);border:1px solid rgba(23,77,43,.10);padding:17px;border-radius:15px}
-    .vitamin-top{display:flex;align-items:center;gap:10px;margin-bottom:7px}
-    .vitamin-letter{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#f5d38a;color:#744516;font:800 18px var(--serif)}
-    .vitamin h3{font-size:14px;color:var(--green);margin:0}
-    .vitamin p{font-size:11px;line-height:1.55;color:var(--muted);margin:0}
-    .lifestyle{padding:0;background:var(--green);color:#fff}
-    .lifestyle-grid{display:grid;grid-template-columns:1fr 1fr;min-height:410px}
-    .lifestyle-image{min-height:410px}.lifestyle-image img{width:100%;height:100%;object-fit:cover}
-    .lifestyle-copy{padding:70px clamp(30px,6vw,90px);align-self:center}
-    .lifestyle-copy .eyebrow{color:#f7c85e}
-    .lifestyle-copy h2{font:700 clamp(34px,4vw,49px)/1.1 var(--serif);margin:12px 0 17px}
-    .lifestyle-copy p{color:rgba(255,255,255,.78);max-width:450px}
-    .lifestyle-copy .btn{background:#f5cb67;color:var(--green);margin-top:14px}
-    .faq{background:#fffdf7}
-    .faq-list{max-width:820px;margin:auto;display:grid;gap:12px}
-    details{background:#f8f6ed;border:1px solid var(--line);border-radius:14px;padding:18px 22px}
-    summary{cursor:pointer;font-weight:700;color:var(--green);list-style:none;display:flex;justify-content:space-between;gap:20px}
-    summary::-webkit-details-marker{display:none}summary:after{content:"+";font-size:20px;color:var(--orange);line-height:1}
-    details[open] summary:after{content:"−"}details p{margin:13px 0 0;color:var(--muted);font-size:13px}
-    .contact{background:#f4d77c;padding:65px 0}
-    .contact-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}
-    .contact h2{font:700 clamp(30px,4vw,44px)/1.1 var(--serif);color:var(--green);margin:8px 0}
-    .contact p{color:#52634c;margin:0}
-    .contact .btn{background:var(--green);white-space:nowrap}
-    footer{background:#103c23;color:#f7f5e9;padding:55px 0 20px}
-    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:40px}
-    .footer-brand .brand-name{color:#fff;font-size:38px}.footer-brand .brand-tag{color:#dce9cb}
-    .footer-brand p{font-size:12px;color:rgba(255,255,255,.68);max-width:290px;margin-top:18px}
-    footer h3{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#f5cb67;margin-bottom:17px}
-    footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:12px;color:rgba(255,255,255,.75)}
-    footer a:hover{color:#f5cb67}
-    .footer-contact{font-size:13px;font-weight:700;color:#f5cb67;overflow-wrap:anywhere}
-    .copyright{border-top:1px solid rgba(255,255,255,.15);padding-top:18px;text-align:center;color:rgba(255,255,255,.58);font-size:10px}
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
-    @media(max-width:900px){
-      .nav-links{gap:14px}.nav-links a{font-size:12px}.contact-pill{padding:11px 14px;font-size:11px}
-      .hero-grid{grid-template-columns:1fr 1fr}.hero-visual img{height:360px}
-      .strip-grid{grid-template-columns:repeat(2,1fr);gap:10px}.strip-item:nth-child(2){border:0}
-      .about-grid{gap:38px}.nutrition-layout{gap:30px}
-    }
-    @media(max-width:700px){
-      .wrap{width:min(100% - 34px,540px)}.announcement{font-size:10px}
-      .nav{height:68px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fffdf7;padding:20px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start;gap:17px}
-      .nav-links.open{display:flex}.nav>.contact-pill{display:none}
-      .hero{padding:48px 0 30px}.hero-grid{grid-template-columns:1fr;gap:4px}.hero-copy{font-size:14px}
-      h1{font-size:53px}.hero-visual img{height:290px;border-radius:30px;object-fit:cover}.round-note{width:88px;height:88px;font-size:9px;right:5px;bottom:8px}
-      .trust-row{gap:12px}.trust-row span{font-size:10px}
-      .strip-grid{padding:15px 0}.strip-item{padding:8px 6px;gap:8px}.strip-item:first-child{padding-left:6px}
-      section{padding:65px 0}.about-grid,.nutrition-layout,.lifestyle-grid{grid-template-columns:1fr;gap:28px}
-      .about-photo img{height:290px}.photo-caption{right:8px}
-      .flavour-grid{grid-template-columns:1fr}.flavour-card{min-height:205px}
-      .nutrition-image img{height:260px;max-width:360px;margin:auto}.vitamin-grid{gap:9px}.vitamin{padding:13px}
-      .lifestyle-image{min-height:260px}.lifestyle-copy{padding:42px 25px 52px}
-      .contact-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr;gap:30px}.footer-brand{grid-column:1/-1}
-    }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{animation:none!important;transition:none!important}}
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announcement">A little fruit. A lot of togetherness. &nbsp;✦&nbsp; Best enjoyed chilled.</div>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#home" aria-label="Gelato home"><span class="brand-name">Gelato</span><span class="brand-tag">...healthy drink, healthy family...</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-        <a href="#home">Home</a><a href="#about">Our Story</a><a href="#drinks">Flavours</a><a href="#nutrition">Nutrition</a><a href="#moments">Our Promise</a><a href="#faq">FAQs</a>
-      </nav>
-      <a class="contact-pill" href="mailto:customercare@gelatonig.com">✉ &nbsp; Customer Care</a>
+  <div class="age-gate" id="ageGate" aria-modal="true" role="dialog" aria-labelledby="ageTitle">
+    <div class="age-card">
+      <div class="logo logo-large">GELATO<span>®</span></div>
+      <p class="eyebrow">A little bold. A lot of flavour.</p>
+      <h2 id="ageTitle">Are you 18 or older?</h2>
+      <p>This website is intended for adults of legal drinking age only.</p>
+      <div class="age-actions">
+        <button class="btn btn-primary" id="confirmAge">Yes, I’m 18+</button>
+        <button class="btn btn-quiet" id="leaveSite">No, take me back</button>
+      </div>
+      <small>Please enjoy responsibly.</small>
     </div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Gelato home">GELATO<span>®</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#flavours">Flavours</a>
+      <a href="#moments">Our Story</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-contact" href="mailto:customercare@gelatonic.com"><span>✉</span> customercare@gelatonic.com</a>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <div class="eyebrow">Naturally fruity. Wonderfully refreshing.</div>
-          <h1>Healthy Drink,<br>Healthy <em>Family.</em></h1>
-          <p class="hero-copy">Gelato is a sweet beverage produced out of natural fruit sources. This delicious Gelato is served best chilled with friends and family. Pour a glass, share a smile and make an everyday moment feel special.</p>
-          <div class="hero-actions"><a class="btn" href="#drinks">Explore our flavours <span>→</span></a><a class="btn secondary" href="#about">Discover Gelato</a></div>
-          <div class="trust-row"><span><b>✿</b> Fruit-inspired goodness</span><span><b>♡</b> Made for sharing</span><span><b>❄</b> Best served chilled</span></div>
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Meet your new moment</p>
+        <h1>Bold Flavour.<br><em>Unforgettable</em><br><strong>Moments.</strong></h1>
+        <p class="hero-intro">Gelato is an expertly crafted <b>alcoholic flavoured drink</b> made for bold taste, good vibes and great company.</p>
+        <a class="btn btn-outline" href="#about">Discover Gelato <span>↗</span></a>
+        <div class="quick-facts">
+          <div><span class="fact-icon">5%</span><span>Alcohol<br>by volume</span></div>
+          <div><span class="fact-icon">✧</span><span>Bold<br>flavours</span></div>
+          <div><span class="fact-icon">◇</span><span>Made for<br>good times</span></div>
+          <div><span class="fact-icon">18+</span><span>Enjoy<br>responsibly</span></div>
         </div>
-        <div class="hero-visual reveal">
-          <img src="assets/gelato-fruit-drinks.webp" alt="Colourful fruit drinks with fresh fruit">
-          <div class="round-note"><strong>Fresh</strong>moments<br>taste better<br>together</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <div class="hero-product">
+          <div class="product-wordmark">GELATO</div>
+          <div class="product-sub">COCKTAIL<br><span>ALCOHOLIC FLAVOURED DRINK</span></div>
+          <img src="assets/red-cocktail.jpg" alt="Red cocktail served in a martini glass">
+          <div class="product-caption">A vibrant pour. A refreshing finish.</div>
         </div>
+        <div class="vertical-note">DRINK RESPONSIBLY · 18+</div>
       </div>
     </section>
 
-    <div class="strip">
-      <div class="wrap strip-grid">
-        <div class="strip-item"><span class="strip-icon">🍓</span><div><strong>Fruit-inspired</strong><small>A delicious fruit-forward drink</small></div></div>
-        <div class="strip-item"><span class="strip-icon">☀</span><div><strong>Made for moments</strong><small>A little joy in every gathering</small></div></div>
-        <div class="strip-item"><span class="strip-icon">♡</span><div><strong>Family friendly</strong><small>Something lovely to share</small></div></div>
-        <div class="strip-item"><span class="strip-icon">❄</span><div><strong>Serve chilled</strong><small>Enjoy cool and refreshing</small></div></div>
+    <section class="about section-grid" id="about">
+      <div class="about-image image-frame"><img src="assets/fruit-cocktail.jpg" alt="Cocktail glass with fresh fruit and berries"></div>
+      <div class="about-copy">
+        <p class="eyebrow">About Gelato</p>
+        <h2>Taste. Celebrate.<br>Live the Moment.</h2>
+        <p>Gelato brings together vibrant flavour and a refreshing finish. It is made for easy-going celebrations, spontaneous catch-ups and the moments that deserve a little extra colour.</p>
+        <p class="subtle">A flavoured alcoholic drink. Best enjoyed chilled and responsibly.</p>
       </div>
-    </div>
-
-    <section class="about" id="about">
-      <div class="wrap about-grid">
-        <div class="about-photo reveal"><img src="assets/gelato-fruit-basket.webp" alt="A colourful selection of fresh tropical fruits"><div class="photo-caption">A taste of nature's goodness.</div></div>
-        <div class="about-copy reveal">
-          <div class="eyebrow">A little about us</div>
-          <h2>Good things begin with nature.</h2>
-          <p>At Gelato, we believe the best moments are often the simplest: a shared meal, a family catch-up, a sunny afternoon or laughter with friends. Our fruit-based beverage brings a delicious burst of fruity refreshment to those moments.</p>
-          <p>Inspired by the colour, flavour and variety of fruits, Gelato is made to be enjoyed slowly, served chilled and shared generously.</p>
-          <ul class="check-list"><li>A delicious beverage produced from natural fruit sources.</li><li>A refreshing companion for meals, celebrations and everyday breaks.</li><li>A brand built around togetherness, enjoyment and family moments.</li></ul>
-        </div>
+      <div class="about-points">
+        <article><span class="line-icon">◉</span><div><h3>Smooth & Refreshing</h3><p>A bright, refreshing drinking experience.</p></div></article>
+        <article><span class="line-icon">✧</span><div><h3>Vibrant Flavours</h3><p>A playful mix of fruit-inspired flavour profiles.</p></div></article>
+        <article><span class="line-icon">♡</span><div><h3>Made for Moments</h3><p>Bring a little colour to your get-togethers.</p></div></article>
+        <article><span class="line-icon">18+</span><div><h3>Adults Only</h3><p>For adults of legal drinking age. Drink responsibly.</p></div></article>
       </div>
     </section>
 
-    <section class="flavours" id="drinks">
-      <div class="wrap">
-        <div class="section-head reveal"><div class="eyebrow">Find your fruity favourite</div><h2>Every moment deserves a little flavour.</h2><p>From bright and tangy to mellow and tropical, fruit brings its own personality to every glass.</p></div>
-        <div class="flavour-grid">
-          <article class="flavour-card reveal" style="--tint:#fce0d8"><div class="fruit">🍓</div><h3>Berry Blend</h3><p>A lively berry-inspired flavour with a sweet-tart character and a beautiful burst of colour.</p><small>BRIGHT · FRUITY · FUN</small></article>
-          <article class="flavour-card reveal" style="--tint:#f8e6b9"><div class="fruit">🥭</div><h3>Tropical Mango</h3><p>A sunny tropical favourite, loved for its fragrant aroma and naturally rich fruit character.</p><small>SUNNY · SMOOTH · TROPICAL</small></article>
-          <article class="flavour-card reveal" style="--tint:#e3efcf"><div class="fruit">🍍</div><h3>Pineapple Zest</h3><p>A lively tropical profile with a bright, tangy edge that feels especially refreshing when chilled.</p><small>ZESTY · FRESH · VIBRANT</small></article>
-        </div>
-        <p class="note">Flavour names above are suggested website examples. Replace them with Gelato's confirmed product names and available flavours before publishing.</p>
+    <section class="flavours section-grid" id="flavours">
+      <div class="section-intro">
+        <p class="eyebrow">Our flavours</p><h2>Bold Flavours.<br>Endless Enjoyment.</h2>
+        <p>Explore a colourful line-up made to bring a unique burst of taste to every pour.</p>
+        <a class="btn btn-outline" href="#contact">Explore Gelato <span>↗</span></a>
+      </div>
+      <div class="flavour-list">
+        <article class="flavour-card">
+          <img src="assets/flavour-blackcurrant.jpg" alt="Dark berries with a red cocktail">
+          <div class="flavour-band purple">Black Currant</div><p>Rich berry character with a bold, fruity finish.</p>
+        </article>
+        <article class="flavour-card">
+          <img src="assets/flavour-pear.jpg" alt="Pears with a golden cocktail">
+          <div class="flavour-band green">Pear Fusion</div><p>Juicy pear notes with a crisp, refreshing feel.</p>
+        </article>
+        <article class="flavour-card">
+          <img src="assets/flavour-apple.jpg" alt="Apples with a red cocktail">
+          <div class="flavour-band red">Apple Bliss</div><p>Sweet apple notes with a lively twist.</p>
+        </article>
+        <article class="flavour-card">
+          <img src="assets/flavour-citrus.jpg" alt="Fresh citrus with an orange cocktail">
+          <div class="flavour-band orange">Citrus Splash</div><p>Zesty citrus character with a bright kick.</p>
+        </article>
       </div>
     </section>
 
-    <section class="nutrition" id="nutrition">
-      <div class="wrap nutrition-layout">
-        <div class="nutrition-image reveal"><img src="assets/gelato-fruit-basket.webp" alt="Fresh fruits that naturally provide a range of nutrients"></div>
-        <div class="nutrition-content reveal">
-          <div class="eyebrow">A little fruit knowledge</div>
-          <h2>Goodness that starts with fruit.</h2>
-          <p>Different fruits provide different nutrients. Here is a simple guide to vitamins and other nutrients commonly found in fruit. The exact amount in any Gelato drink depends on its fruit blend, recipe and processing.</p>
-          <div class="vitamin-grid">
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">C</span><h3>Vitamin C</h3></div><p>Supports normal immune function, helps the body make collagen for skin and connective tissue, and improves absorption of iron from plant foods.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">A</span><h3>Vitamin A</h3></div><p>Supports normal vision, immune function and the maintenance of healthy skin. Some fruits provide beta-carotene, which the body can convert to vitamin A.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">B6</span><h3>Vitamin B6</h3></div><p>Helps the body use and store energy from food and supports normal brain and nervous-system function.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">B9</span><h3>Folate</h3></div><p>Helps the body make healthy red blood cells and supports normal cell division and growth.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">E</span><h3>Vitamin E</h3></div><p>Acts as an antioxidant, helping protect cells from oxidative damage. It is present in some fruits, including avocado.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">K</span><h3>Vitamin K</h3></div><p>Contributes to normal blood clotting and helps maintain healthy bones. Some fruits, such as kiwifruit, provide vitamin K.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">K⁺</span><h3>Potassium</h3></div><p>A mineral that supports normal muscle function, nerve signalling and the maintenance of normal blood pressure.</p></article>
-            <article class="vitamin"><div class="vitamin-top"><span class="vitamin-letter">✦</span><h3>Fibre & plant compounds</h3></div><p>Whole fruits can provide dietary fibre for digestive health and plant compounds such as polyphenols that contribute to fruit colour and antioxidant activity.</p></article>
-          </div>
-        </div>
+    <section class="experience" id="moments">
+      <div class="experience-copy">
+        <p class="eyebrow">Why choose Gelato?</p><h2>More than a Drink.<br>It’s an Experience.</h2>
+        <p>From the first pour to the final toast, Gelato brings bold flavour to the moments you share.</p>
       </div>
-      <div class="wrap"><p class="note">Nutrition note: these are general facts about nutrients found in various fruits, not a verified nutrient analysis of Gelato. Do not describe a specific Gelato flavour as a source of a vitamin or as “high in” a nutrient until its final recipe and nutrition label have been confirmed. Fruit drinks may contain less fibre than whole fruit.</p></div>
+      <div class="experience-benefits">
+        <div><span>◇</span><h3>Vibrant flavour</h3><p>Fruit-inspired character in every serve.</p></div>
+        <div><span>✧</span><h3>Made to share</h3><p>A colourful addition to adult occasions.</p></div>
+        <div><span>5%</span><h3>5% ABV</h3><p>Alcohol by volume. Enjoy in moderation.</p></div>
+      </div>
+      <div class="experience-photo"><img src="assets/celebration.jpg" alt="Friends raising cocktails at a celebration"></div>
     </section>
 
-    <section class="lifestyle" id="moments">
-      <div class="lifestyle-grid">
-        <div class="lifestyle-image"><img src="assets/gelato-family.webp" alt="Family sharing a joyful moment with fruit drinks"></div>
-        <div class="lifestyle-copy reveal"><div class="eyebrow">More than a drink</div><h2>Make room for the moments that matter.</h2><p>Some of life's best memories happen around a table. A chilled glass of Gelato is an invitation to pause, connect and enjoy the people around you.</p><p>At home, with friends or during a little celebration, make every pour part of a happier moment.</p><a class="btn" href="mailto:customercare@gelatonig.com">Say hello to Gelato ↗</a></div>
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-heading"><div><p class="eyebrow">Made for good times</p><h2>Moments with Gelato</h2></div><div class="gallery-controls"><button id="galleryPrev" aria-label="Previous gallery images">←</button><button id="galleryNext" aria-label="Next gallery images">→</button></div></div>
+      <div class="gallery-track" id="galleryTrack">
+        <img src="assets/gelato-nightlife.jpg" alt="Friends sharing cocktails on a rooftop">
+        <img src="assets/fruit-cocktail.jpg" alt="Fruit and cocktail serving inspiration">
+        <img src="assets/celebration.jpg" alt="Cocktails at a night-time celebration">
+        <img src="assets/flavour-citrus.jpg" alt="Citrus cocktail inspiration">
+        <img src="assets/red-cocktail.jpg" alt="Red cocktail in a martini glass">
       </div>
     </section>
 
-    <section class="faq" id="faq">
-      <div class="wrap">
-        <div class="section-head reveal"><div class="eyebrow">Good to know</div><h2>Frequently asked questions.</h2><p>A few helpful details about enjoying Gelato.</p></div>
-        <div class="faq-list">
-          <details><summary>What is Gelato?</summary><p>Gelato is a sweet beverage produced from natural fruit sources. It is made to bring fruity refreshment to everyday moments.</p></details>
-          <details><summary>How is Gelato best served?</summary><p>Gelato is best served chilled. Refrigerate according to the storage instructions on the product packaging and enjoy it cool.</p></details>
-          <details><summary>Does Gelato contain vitamins?</summary><p>Fruits naturally contain different vitamins and minerals. The specific nutrients and quantities in a Gelato drink depend on the fruits used and the final recipe. Please refer to the product label for verified nutritional information.</p></details>
-          <details><summary>Where can I ask a question about Gelato?</summary><p>For product enquiries, feedback or customer support, email our customer care team at customercare@gelatonig.com.</p></details>
-          <details><summary>Can I suggest a flavour or share feedback?</summary><p>Absolutely. We welcome thoughtful feedback and flavour suggestions. Send your message to customercare@gelatonig.com.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="wrap contact-inner">
-        <div><div class="eyebrow">We'd love to hear from you</div><h2>Let's make good moments happen.</h2><p>Questions, feedback or just want to say hello? Our customer care team is one email away.</p></div>
-        <a class="btn" href="mailto:customercare@gelatonig.com">✉ &nbsp; customercare@gelatonig.com</a>
+    <section class="faq-section" id="faq">
+      <div><p class="eyebrow">Good to know</p><h2>Frequently Asked<br>Questions</h2></div>
+      <div class="faq-list">
+        <details><summary>What is Gelato?</summary><p>Gelato is an alcoholic flavoured drink created for adults who enjoy bold flavour and refreshing serves.</p></details>
+        <details><summary>What is the alcohol content?</summary><p>Gelato contains 5% alcohol by volume (5% ABV).</p></details>
+        <details><summary>What is the pack volume?</summary><p>The product information supplied for this website indicates a net volume of 1 litre (1L).</p></details>
+        <details><summary>How should I enjoy Gelato?</summary><p>Serve chilled. If mixing, use clean glassware and fresh ingredients. Always drink responsibly.</p></details>
+        <details><summary>Where can I find the full product information?</summary><p>Please refer to the product label for the complete ingredients, storage instructions and regulatory information.</p></details>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand" href="#home"><span class="brand-name">Gelato</span><span class="brand-tag">...healthy drink, healthy family...</span></a><p>A sweet, fruit-based beverage made for chilled refreshment, shared smiles and memorable moments with the people you love.</p></div>
-        <div><h3>Explore</h3><ul><li><a href="#about">Our Story</a></li><li><a href="#drinks">Flavours</a></li><li><a href="#nutrition">Fruit & Nutrition</a></li><li><a href="#moments">Our Promise</a></li><li><a href="#faq">FAQs</a></li></ul></div>
-        <div><h3>Customer care</h3><ul><li>Product enquiries</li><li>Feedback & suggestions</li><li><a class="footer-contact" href="mailto:customercare@gelatonig.com">customercare@gelatonig.com</a></li></ul></div>
-      </div>
-      <div class="copyright">© <span id="year"></span> Gelato Nigeria. All rights reserved. &nbsp; · &nbsp; ...healthy drink, healthy family...</div>
+  <footer id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="logo" href="#home">GELATO<span>®</span></a><p>Bold flavour, refreshing moments and good company. Gelato is an alcoholic flavoured drink for adults.</p></div>
+      <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About</a><a href="#flavours">Flavours</a><a href="#moments">Our Story</a><a href="#gallery">Gallery</a></div>
+      <div><h3>Learn More</h3><a href="#faq">FAQs</a><a href="#responsibility">Drink Responsibly</a><a href="#contact">Contact</a></div>
+      <div><h3>Get in Touch</h3><a class="email-link" href="mailto:customercare@gelatonic.com">✉ &nbsp; customercare@gelatonic.com</a><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="TikTok">♪</a></div></div>
     </div>
+    <div class="footer-bottom" id="responsibility"><strong>DRINK RESPONSIBLY &nbsp; 18+</strong><span>Not for sale to persons under the age of 18.</span><span>© <span id="year"></span> Gelato. All Rights Reserved.</span></div>
   </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
-    menuBtn.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(open));
-      menuBtn.textContent = open ? '×' : '☰';
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-      menuBtn.textContent = '☰';
-    }));
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {threshold: 0.12});
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
